@@ -106,7 +106,7 @@
             <h1>
               Hi,<br />
               I'am <span>Wahyu</span><br />
-              Reguler Pedestrian
+              <span id="anim"></span>
             </h1>
             <a href="CV.pdf" class="btn mt-4 cv" download="CV_Wahyu_Tri_Kusumo"
               >Download CV</a
@@ -301,6 +301,8 @@
       </div>
     </section>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -308,6 +310,12 @@
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+
+      var typed = new Typed('#anim', {
+          // Waits 1000ms after typing "First"
+            strings: ['Reguler Pedestrian', 'Web Developer'], typeSpeed:100, backSpeed:100, loop:true
+          });
+
       AOS.init({
         duration: 2000,
         once: true,
